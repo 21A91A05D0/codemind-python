@@ -4,15 +4,12 @@ def isprime(n):
             return 0
     return 1
 
-n1=int(input())
-n2=int(input())
-s=n1+n2
-k=0
-i=1
-while s>0:
-    if isprime(s+i)==1:
-        k=(s+i)
+n=int(input())
+m=int(input())
+s=(n+m)
+c=0
+for i in range(s+1,100000):
+    if isprime(i)==1:
+        c=i
         break
-    i+=1
-d=k-s
-print(d)
+print(c-s)
