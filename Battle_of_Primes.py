@@ -8,8 +8,10 @@ n=int(input())
 m=int(input())
 s=(n+m)
 c=0
-for i in range(s+1,100000):
+i=s+1
+while s>0:
     if isprime(i)==1:
         c=i
         break
+    i+=1
 print(c-s)
