@@ -1,3 +1,1 @@
-r=int(input())
-a=3.14*r*r
-print("%.2f" %a)
+print(3.14*pow(int(input()),2))
