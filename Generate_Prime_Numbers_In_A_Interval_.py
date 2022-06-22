@@ -1,9 +1,14 @@
+def isprime(n):
+    if n==1:
+        return 0
+    for i in range(2,int(n**0.5)+1):
+        if n%i==0:
+            return 0
+    return 1
+    
 n=int(input())
 m=int(input())
+c=0
 for i in range(n,m+1):
-    c=0
-    for j in range(1,i+1):
-        if i%j==0:
-            c+=1
-    if c==2:
+    if isprime(i)==1:
         print(i)
