@@ -1,16 +1,10 @@
-n=int(input())
-ls=[ ]
-while n>0:
-    d=n%10
-    ls.append(d)
-    n=n//10
-j=1
-c,i=0,0
-for i in ls:
-    for j in ls:
-        if i==j:
-            c+=1
-if c==len(ls):
+n=input()
+c=0
+for i in n:
+    if n.count(i)>1:
+        c=1
+        break
+if c==0:
     print('Unique Number')
 else:
     print('Not Unique Number')
