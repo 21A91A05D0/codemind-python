@@ -6,4 +6,3 @@ for i in range(0,n):
         break
     s+=ls[i]
 print(s)
-        
