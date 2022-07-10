@@ -1,17 +1,14 @@
 n=int(input())
-sq=n**2  #144
-rev=0
-while(n):
-    d=n%10
-    rev=rev*10+d  #21
-    n=n//10
-sqr=rev**2   #441
-rev1=0
-while(sqr):
-    d=sqr%10
-    rev1=rev1*10+d  #144
-    sqr=sqr//10
-if sq==rev1:
+a=n*n
+n=str(n)
+a=str(a)  #144
+b=a[::-1] #441
+c=n[::-1] #21
+d=int(c)
+e=d*d  #441
+f=str(e)
+h=f[::-1]
+if h==a:
     print('True')
 else:
     print('False')
