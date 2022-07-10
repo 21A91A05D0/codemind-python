@@ -7,8 +7,7 @@ def fun(i):
 
 s=input()
 l=s.split()
-k=[]
+p=[]
 for i in l:
-    p=fun(i)
-    k.append(p)
-print(max(k))
+    p.append(fun(i))
+print(max(p))
