@@ -1,11 +1,12 @@
 s=input()
-c=input()
-d,k=0,0
-for i in s:
-    if i==c:
-        k=1
-        d=s.index(i)
-if k==1:
+g=input()
+c=0
+for i in range(len(s)):
+    if s[i]==g:
+        c=1
+        d=i
+        break
+if c==1:
     print('True')
     print(d)
 else:
