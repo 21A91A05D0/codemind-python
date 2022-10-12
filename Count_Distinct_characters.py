@@ -1,4 +1,3 @@
-
 s=input()
 s=s.lower()
 s=set(s)
