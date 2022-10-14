@@ -1,10 +1,12 @@
 s=input().lower()
 n='aeiou'
-c=0
-for i in n:
-    if i not in s:
-        print(i,end=' ')
-    else:
-        c+=1
-if c==len(n):
-    print('0')
+l=[]
+for i in s:
+    if i in n:
+        l.append(i)
+if len(set(l))==len(n):
+    print(0)
+else:
+    for i in n:
+        if i not in l:
+            print(i,end=" ")
