@@ -1,6 +1,5 @@
 s=input().lower()
-k=s[::-1]
-if s==k:
+if s==s[::-1]:
     print('True')
 else:
     print('False')
