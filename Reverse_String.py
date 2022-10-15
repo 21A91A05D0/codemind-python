@@ -1,3 +1,4 @@
-s=input()
-s=s[::-1]
-print(s)
+s=input().split()
+for i in s[::-1]:
+    print(i,end=' ')
+    
